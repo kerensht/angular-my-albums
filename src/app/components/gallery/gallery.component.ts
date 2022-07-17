@@ -13,7 +13,7 @@ export class GalleryComponent implements OnInit, OnDestroy {
 
   public images: any;
   public awsUrl = 'https://ks-photos-storage.s3.eu-west-1.amazonaws.com/images/';
-  public localUrl = "http://localhost:3030/get-image";
+  public localUrl = "https://imagesserver-env.eba-bgy6he58.eu-west-1.elasticbeanstalk.com/get-image";
   public photosImagesSub: Subscription = new Subscription();
 
   constructor(
