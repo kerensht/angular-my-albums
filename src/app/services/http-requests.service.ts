@@ -7,7 +7,7 @@ import { UpdatesServiceService } from './updates-service.service';
 })
 export class HttpRequestsService {
 
-  private URL: string = "http://localhost:3030/";
+  private URL: string = "https://imagesserver-env.eba-bgy6he58.eu-west-1.elasticbeanstalk.com/";
 
   constructor(
     private http: HttpClient,
