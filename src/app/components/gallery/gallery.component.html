@@ -1,6 +1,6 @@
 <div class="gallery">
   <div *ngFor="let image of images" class="image-container">
     <button (click)="onDeleteImage(image._id,image.key)">Delete</button>
-    <img [src]="'https://ks-photos-storage.s3.eu-west-1.amazonaws.com/images/'+image.storageName">
+    <img [src]="localUrl+'?key='+image.key+'&name='+image.originalName" [alt]="image.originalName">
   </div>
 </div>

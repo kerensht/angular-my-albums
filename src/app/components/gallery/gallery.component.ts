@@ -12,6 +12,8 @@ import { UpdatesServiceService } from 'src/app/services/updates-service.service'
 export class GalleryComponent implements OnInit, OnDestroy {
 
   public images: any;
+  public awsUrl = 'https://ks-photos-storage.s3.eu-west-1.amazonaws.com/images/';
+  public localUrl = "http://localhost:3030/get-image";
   public photosImagesSub: Subscription = new Subscription();
 
   constructor(
